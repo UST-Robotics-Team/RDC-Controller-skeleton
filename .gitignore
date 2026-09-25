@@ -6,3 +6,4 @@ mx.scratch
 /.settings
 /.vscode
 /cmake
+*.s
