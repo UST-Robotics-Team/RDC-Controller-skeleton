@@ -106,8 +106,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-
+    /* USER CODE BEGIN 3 */ 
     tft_prints(0, 0, "Welcome!");
     tft_prints(0, 1, "GLHF");
     tft_update(1);
