@@ -1,0 +1,8 @@
+build
+mx.scratch
+!.settings
+.clangd
+.DS_Store
+/.settings
+/.vscode
+/cmake
