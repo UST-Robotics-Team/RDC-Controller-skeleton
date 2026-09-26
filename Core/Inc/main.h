@@ -93,10 +93,10 @@ void Error_Handler(void);
 #define Button2_GPIO_Port GPIOA
 #define Button1_Pin GPIO_PIN_9
 #define Button1_GPIO_Port GPIOA
-#define RIGHT_LSW_Pin GPIO_PIN_11
-#define RIGHT_LSW_GPIO_Port GPIOA
-#define LEFT_LSW_Pin GPIO_PIN_12
-#define LEFT_LSW_GPIO_Port GPIOA
+#define LSW2_Pin GPIO_PIN_11
+#define LSW2_GPIO_Port GPIOA
+#define LSW1_Pin GPIO_PIN_12
+#define LSW1_GPIO_Port GPIOA
 #define Button8_Pin GPIO_PIN_15
 #define Button8_GPIO_Port GPIOA
 #define Button7_Pin GPIO_PIN_3
@@ -111,6 +111,12 @@ void Error_Handler(void);
 #define LED1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+#define gpio_set(gpio) HAL_GPIO_WritePin(gpio##_GPIO_Port, gpio##_Pin, GPIO_PIN_SET)
+#define gpio_reset(gpio) HAL_GPIO_WritePin(gpio##_GPIO_Port, gpio##_Pin, GPIO_PIN_RESET)
+#define gpio_toggle(gpio) HAL_GPIO_TogglePin(gpio##_GPIO_Port, gpio##_Pin)
+#define gpio_read(gpio) HAL_GPIO_ReadPin(gpio##_GPIO_Port, gpio##_Pin)
+
+// TODO: define the GPIOs for the buttons and LEDs. Hints: check the schematic.
 
 /* USER CODE END Private defines */
 
