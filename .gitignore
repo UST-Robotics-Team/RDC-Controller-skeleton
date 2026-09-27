@@ -11,3 +11,4 @@ mx.scratch
 # CMakePresets.json
 # /Drivers
 # STM32F103XX_FLASH.ld
+.vscode/launch.json
