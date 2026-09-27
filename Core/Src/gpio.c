@@ -59,7 +59,7 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pins : Joystick1_Button_Pin Joystick2_Button_Pin */
   GPIO_InitStruct.Pin = Joystick1_Button_Pin|Joystick2_Button_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : BOOT1_Pin Button4_Pin Button3_Pin Button7_Pin
@@ -79,9 +79,9 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Button2_Pin Button1_Pin LSW2_Pin LSW1_Pin
+  /*Configure GPIO pins : Button2_Pin Button1_Pin LimitSwitch2_Pin LimitSwitch1_Pin
                            Button8_Pin */
-  GPIO_InitStruct.Pin = Button2_Pin|Button1_Pin|LSW2_Pin|LSW1_Pin
+  GPIO_InitStruct.Pin = Button2_Pin|Button1_Pin|LimitSwitch2_Pin|LimitSwitch1_Pin
                           |Button8_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
