@@ -101,15 +101,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  tft_init(PIN_ON_TOP, BLACK, WHITE, CYAN, DARK_GREY);
+  
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    tft_prints(0, 0, "Welcome!");
-    tft_prints(0, 1, "GLHF");
-    tft_update(1);
   }
   /* USER CODE END 3 */
 }
